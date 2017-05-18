@@ -1,0 +1,207 @@
+
+//main page banner
+.page-banner {
+    position: relative;
+    height: 360px;
+}
+
+.page-banner .banner {
+    width: 100%;
+    height: 360px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+// Set homepage banner tiles to single row for tablet
+@media screen and (max-width : 992px) {
+  .page-banner,
+  .page-banner .banner
+  {
+      height: 180px;
+  }
+}
+
+.page-banner .row {
+    pointer-events: none;
+}
+
+.page-banner .btn-group-account {
+    pointer-events: auto;
+}
+
+.page-banner .bannertiles {
+    width: 120%;
+    height: 360px;
+}
+
+.page-banner .bannertile-add {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+    color: white;
+    cursor: pointer;
+}
+
+//design offset
+.logo-squiz {
+  margin: 15px
+}
+
+.btn-group-account button,
+.btn-group-account button.focus,
+.btn-group-account button:active:hover {
+    color: white;
+    background-color: transparent;
+    border: none;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+}
+
+
+
+// Title banner, svg leaves and flipping states
+.page-title-small:after,
+.page-title-small:before,
+.page-title-medium:after,
+.page-title-medium:before,
+.page-title-large:after,
+.page-title-large:before {
+    display: inline-block;
+    content: '';
+    background-image: url('/mysource_files/branding/palm.svg');
+    background-size: 100% 100%;
+    height: 74px;
+    width: 121px;
+}
+.page-title-small:after,
+.page-title-medium:after,
+.page-title-large:after {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -ms-filter:  "FlipH";
+    filter: FlipH;
+}
+.page-title-large {
+  margin-top:57px;
+  font-size: 126px;
+}
+
+
+.page-title-medium:after,
+.page-title-medium:before {
+    height: 60px;
+    width: 60px;
+    position:relative;
+    top:0px;
+}
+.page-title-medium {
+    margin-top:-5px;
+    font-size: 82px;
+}
+
+.page-banner-small {
+  padding-top:80px;
+  height:300px;
+  background-image: url(/mysource_files/branding/banner-tile-bg-small.png);
+  background-size: 100% 100%;
+}
+//top blend
+.page-banner-small:before {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: 100% 100%;
+    background: -moz-linear-gradient(top, rgba(30, 33, 71, 1) 0%, rgba(30, 33, 71, 0.8) 5%, rgba(30, 33, 71, 0.6) 100%);
+    background: -webkit-linear-gradient(top, rgba(30, 33, 71, 1) 0%, rgba(30, 33, 71, 0.8) 5%, rgba(30, 33, 71, 0.6) 100%);
+    background: linear-gradient(to bottom, rgba(30, 33, 71, 1) 0%, rgba(30, 33, 71, 0.8) 5%, rgba(30, 33, 71, 0.6) 100%);
+}
+.page-title-small:after,
+.page-title-small:before {
+    height: 60px;
+    width: 60px;
+    position:relative;
+    top:10px;
+}
+.page-title-small {
+    font-size: 60px;
+}
+
+
+
+
+
+
+
+
+.btn-group-account {
+    pointer-events: auto;
+}
+
+.icon-account-user {
+    width: 32px;
+    height: auto;
+    position: relative;
+    top: 12px;
+}
+
+.icon-account-user-carat-down {
+    position: relative;
+    top: 5px;
+}
+/* banner tiling */
+figure.bannertile {
+    width: 180px;
+    height: 180px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+figure.bannertile:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(99, 96, 156, 0.9);
+    transition: all 0.3s linear;
+}
+
+figure.bannertile:hover:before {
+    background: none;
+}
+
+figure.bannertile:hover figcaption {
+    display: inline-block;
+}
+
+figure.bannertile img {
+    width: 180px;
+    height: 180px;
+}
+
+figure.bannertile figcaption {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    color: white;
+    font-size: small;
+    padding: 4px;
+    display: none;
+    opacity: 0.7;
+    text-align: center;
+}

@@ -1,0 +1,25 @@
+.accordion-content,
+.accordion-content .panel-default,
+#main .accordion-content  .panel-default > .panel-heading + .panel-collapse > .panel-body
+{
+  border: none;
+  margin: 0px;
+}
+.accordion-content .fa.fa-chevron-down, .accordion-content .fa.fa-chevron-up {
+   color: #4cacd6;
+}
+.accordion-content .panel .panel-heading,
+.accordion-content .list-group-item {
+    background-color: white;
+    border-left: 3px solid #4cacd6;
+    cursor: default;
+}
+
+#main .accordion-content div.panel-collapse.collapse.in {
+  border-left: 3px solid #4cacd6;
+}
+
+#main .accordion-content div.panel-heading[aria-expanded=false] {
+  border-left: 3px solid #9b9b9b;
+  background-color: #f1f1f1;
+}

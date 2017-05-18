@@ -1,0 +1,54 @@
+// Side page accordion-list nav
+.accordion-list .panel-body,
+#main .accordion-list .panel-default,
+.accordion-list .panel .list-group,
+#main .accordion-list  .panel-default > .panel-heading + .panel-collapse > .panel-body
+{
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+.accordion-list .panel a.list-group-item {
+  text-decoration: none;
+}
+.accordion-list .panel .list-group-item:first-child {
+   border-top-right-radius: 0px;
+   border-top-left-radius: 0px;
+}
+.accordion-list .panel .list-group-item:last-child {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.accordion-list .panel .list-group-item div,
+.accordion-list .panel .panel-title,
+ {
+    border-bottom: 1px solid #d8d8d8;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.accordion-list .panel .panel-heading,
+.accordion-list .list-group-item {
+    padding:0px;
+    padding-left:25px;
+    padding-right:28px;
+    padding-bottom: 1px;
+    border: none;
+    border-radius: 0px;
+    background-color: white;
+    border-left: 3px solid white; /*Stop hover jiggle*/
+    cursor: default;
+}
+
+.accordion-list .list-group-item-selected,
+.accordion-list .panel a.list-group-item:hover {
+   background-color: #f7f7f7;
+   border-left: 3px solid #4cacd6;
+}
+
+.accordion-list .fa.fa-chevron-down, .accordion-list .fa.fa-chevron-up {
+   color: #4cacd6;
+   margin-top:13px;
+}

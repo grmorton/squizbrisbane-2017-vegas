@@ -1,0 +1,13 @@
+{
+  "name": "brisvegas",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "jquery": "*",
+    "qunit": "~1.x",
+    "squiz-module-accordion": "git@gitlab.squiz.net:boilerplate/squiz-module-accordion.git#0.0.12",
+    "squiz-module-font-awesome": "git@gitlab.squiz.net:boilerplate/squiz-module-font-awesome.git#0.1.1",
+    "squiz-module-twitter-bootstrap": "git@gitlab.squiz.net:boilerplate/squiz-module-twitter-bootstrap.git#0.1.4",
+    "modernizr": "~2.x"
+  }
+}

@@ -1,0 +1,40 @@
+.panels-info {
+  position:relative;
+}
+
+.panels-info-overlay {
+  position:absolute;
+  top:0px;
+  left:0px;
+  right:0px;
+  pointer-events:none; //ensure full underlying panel is clickable
+}
+
+.panels-info-panel {
+  height:214px;
+  overflow:hidden;
+  font-size: 18px;
+}
+.panels-info-panel div {
+  margin-top: 10%;
+}
+
+#main div.panels-info-panel a,
+#main div.panels-info-panel h2 {
+  color: white;
+  text-decoration: none;
+}
+
+// Hovers
+.panels-info-purple:hover {
+  background-color: #4f4d86;
+}
+.panels-info-green:hover {
+  background-color: #478e70;
+}
+
+//design offset
+.image-newbie {
+  position: relative;
+  top: -10px;
+}

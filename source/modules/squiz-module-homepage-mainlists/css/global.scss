@@ -1,0 +1,120 @@
+/* Page lists */
+.page-lists {
+    position: relative;
+    top: -5px;
+}
+
+.page-list {
+    background: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    border-top: 4px solid grey;
+}
+
+.page-list h2 {
+    margin-bottom: 20px;
+}
+
+.page-list h3 {
+    margin-top: 0;
+    font-family: 'Open Sans';
+    /* bold */
+    font-weight: 600;
+    font-size: 18px;
+    max-width: 250px;
+}
+
+.page-list p {
+    color: grey;
+}
+
+.page-list .list-group .fa-angle-right {
+    position: relative;
+    top: -5px;
+}
+
+//min height on homepage vertical info panels
+@media screen and (min-width : 992px) {
+  div.container.page-lists .list-group {
+    min-height: 400px;
+  }
+}
+
+
+//.page-list colour theming - may replace with matrix variables somehow...?
+div.container.page-lists .page-list.page-list-blue {
+    border-color: #4cacd6;
+}
+
+div.container.page-lists .page-list.page-list-blue .list-group-item i.fa {
+    color: #4cacd6;
+}
+
+div.container.page-lists .page-list.page-list-blue a.list-group-item:hover {
+    background-color: #e3eff4;
+}
+
+div.container.page-lists .page-list.page-list-red {
+    border-color: #d35a43;
+}
+
+div.container.page-lists .page-list.page-list-red .list-group-item i.fa {
+    color: #d35a43;
+}
+
+div.container.page-lists .page-list.page-list-red a.list-group-item:hover {
+    background-color: #f8eae8;
+}
+
+div.container.page-lists .page-list.page-list-yellow {
+    border-color: #f2ca45;
+}
+
+div.container.page-lists .page-list.page-list-yellow .list-group-item i.fa {
+    color: #f2ca45;
+}
+
+div.container.page-lists .page-list.page-list-yellow a.list-group-item:hover {
+    background-color: #f5efde;
+}
+
+.page-lists .page-list h2 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.page-list .list-group {
+    margin-bottom: 0;
+}
+
+.page-list .list-group-item,
+.page-list .list-group-item .active {
+    background-color: none;
+    background: none;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    text-decoration: none;
+    min-height: 90px;
+}
+
+//Page list event formatting
+.symbol-date {
+    border-radius: 50%;
+    border: 2px solid #d35a43;
+    width: 58px;
+    height: 58px;
+    color: #b9604d;
+}
+
+.symbol-date h5 {
+    position: relative;
+    top: -6px;
+    font-size: 26px;
+}
+
+.symbol-date span {
+    position: relative;
+    top: -25px;
+    font-size: 13px;
+}

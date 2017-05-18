@@ -1,0 +1,23 @@
+{
+  "name": "squiz-module-twitter-boostrap",
+  "version": "0.1.4",
+  "authors": [
+    "abarnes@squiz.com.au"
+  ],
+  "description": "Twitter Bootstrap",
+  "license": "",
+  "private": true,
+  "ignore": [],
+  "dependencies": {
+    "bootstrap-sass": "*"
+  },
+  "_release": "0.1.4",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.4",
+    "commit": "9ff0d3d2df3a54994951c25428551569146d0f10"
+  },
+  "_source": "git@gitlab.squiz.net:boilerplate/squiz-module-twitter-bootstrap.git",
+  "_target": "0.1.4",
+  "_originalSource": "git@gitlab.squiz.net:boilerplate/squiz-module-twitter-bootstrap.git"
+}

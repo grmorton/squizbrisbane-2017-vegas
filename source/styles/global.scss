@@ -1,0 +1,362 @@
+/* boiler plate defaults */
+
+@import "boilerplate.scss";
+@import "normalize.scss";
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+html {
+    @include sq-border-box;
+    position: relative;
+    min-height: 100%;
+}
+@import "utilities.scss"; // Taken from HTML 5 BP
+
+::-moz-selection {
+    background: $content-selection-highlight;
+    text-shadow: none;
+}
+
+::selection {
+    background: $content-selection-highlight;
+    text-shadow: none;
+}
+
+body {
+    overflow-y: scroll;
+    font-size: $base-font-scale + em;
+    line-height: 1.4;
+    padding: 0;
+    margin: 0;
+    background-color: #f7f7f7;
+}
+
+img {
+    max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+@-ms-viewport {
+    width: device-width;
+}
+@page {
+    margin: 0.5cm;
+}
+
+
+
+/* user defined */
+
+
+/*Base font styles*/
+@import url( 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+@font-face {
+    font-family: "Fibre";
+    src: url("mysource_files/fibre-font.otf");
+}
+.font-fibre {
+    font-family: Fibre;
+}
+
+body {
+    height: 100%;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.8;
+    letter-spacing: 0.6px;
+    color: #000000;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.9px;
+    padding-bottom: 15px;
+}
+
+//#main h2,
+h2 {
+    font-family: 'Open Sans';
+    /* Light */
+    font-size: 26px;
+    font-weight: 300;
+    // line-height: normal;
+    // letter-spacing: 0.6px;
+    // color: #000000;
+}
+
+h3 {
+    font-size: 17px;
+    font-weight: 600;
+    // line-height: normal;
+    // letter-spacing: 0.4px;
+    // color: #000000;
+}
+
+h4 {
+    font-size: 15px;
+    font-weight: bold;
+    // line-height: normal;
+    // letter-spacing: 0.4px;
+    // color: #000000;
+}
+
+.subtle-body-text {
+    // font-family: 'Open Sans';
+    // font-size: 15px;
+    // font-weight: normal;
+    // font-style: normal;
+    // font-stretch: normal;
+    // line-height: normal;
+    // letter-spacing: 0.6px;
+    color: #6a6a6a;
+}
+
+.forecolor-white {
+    color: white;
+}
+
+.backgroundcolor-purple {
+    background-color: #211e47;
+}
+
+.backgroundcolor-purple-light {
+    background-color: #626198;
+}
+
+.backgroundcolor-green {
+    background-color: #58a283;
+}
+
+
+// Global style overrides
+
+.rounded {
+    border-radius: 50px;
+}
+
+.btn.btn-rounded-inverse,
+.btn.btn-rounded-inverse .fa,
+input.input-rounded-inverse {
+    border-radius: 50px;
+    background-color: #212048;
+    color: white;
+    border-color: #626198;
+}
+
+.btn.btn-rounded-inverse_:hover {
+    border-radius: 50px;
+    background-color: #5ea8d2;
+    color: #211e47;
+}
+
+.btn.btn-borderless,
+.btn.btn-borderless:focus,
+.btn.btn-borderless:hover {
+    background: none;
+    border-width: 0;
+    border: none;
+    outline: 0;
+}
+
+//Global drop downs
+#page-wrapper ul.dropdown-menu {
+    border-radius: 0;
+    padding: 0;
+    background-color: white;
+}
+//selected state
+#page-wrapper ul.nav > li.dropdown.open > a {
+    background-color: #eeedf6;
+    color: #212048;
+}
+//menu arrow
+#navbar-collapse > ul > li.dropdown.yamm-fw.open:before,
+.btn-group.open:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin-left: 20px;
+    bottom: -5px;
+    z-index: 10000;
+    border: 25px solid;
+    border-width: 0 15px 15px 15px;
+    border-color: transparent transparent white transparent;
+}
+
+#page-wrapper ul.dropdown-menu li {
+    border-bottom: 1px solid #eeedf6;
+}
+
+#page-wrapper nav ul.dropdown-menu li {
+    min-width: 255px;
+}
+
+#page-wrapper ul.dropdown-menu li.divider {
+    border-bottom: none;
+}
+
+#page-wrapper ul.dropdown-menu li a {
+    // height: 50px;
+    background-color: white;
+    // padding: 14px;
+    font-size: 16px;
+    min-height: 50px;
+    text-decoration: none;
+}
+
+#page-wrapper ul.dropdown-menu li a i.fa {
+    color: #eeedf6;
+    // margin-top:6px;
+}
+
+#page-wrapper ul.dropdown-menu li a:hover i.fa {
+    color: black;
+}
+
+#page-wrapper ul.dropdown-menu li a:hover {
+    background-color: #eeedf6;
+}
+
+//Hide menu arrows on smaller devices
+@media (max-width: 770px) {
+    #page-wrapper ul.dropdown-menu:before {
+        display: none;
+    }
+}
+/* for main modal overlay triggered by mega menu */
+#main {
+  position:relative;
+}
+
+#modal_menu_overlay {
+    position: absolute;
+    display: none;
+    z-index: 100;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(33, 30, 71, 0.7);
+}
+
+
+/* general content styles */
+/* breadcrumbs */
+ul.breadcrumb {
+    margin: 0px;
+}
+
+.breadcrumb li,
+.breadcrumb li a,
+.breadcrumb li a:visited {
+    text-decoration: none;
+    color: #737373;
+}
+
+.breadcrumb li a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb > li + li:before {
+    color: #737373;
+    content: "\003E ";
+    /* > symbol */
+    padding: 0 5px;
+}
+
+.breadcrumb:first-child {
+    padding-left: 0;
+}
+//Well with side arrow
+#main .well {
+    position: relative;
+    border: none;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-left: 4px solid #4cacd6;
+}
+
+#main .well:after,
+#main .well:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -30px;
+    top: 50%;
+    margin-top: -15px;
+    border: 25px solid;
+    border-width: 15px;
+    border-color: transparent #4cacd6 transparent transparent;
+}
+
+#main .well:after {
+    left: -23px;
+    border-color: transparent #f5f5f5 transparent transparent;
+}
+//table formatted
+#main table.table-formatted {
+    border: none;
+}
+
+#main table.table-formatted td,
+#main table.table-formatted th,
+#main table.table-formatted tr {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #bfbfbf;
+}
+
+#main table.table-formatted th {
+    background: none;
+    color: #4cacd6;
+    border-bottom: 3px solid #4cacd6;
+    white-space: nowrap;
+    padding-right: 20px;
+}
+
+#main table.table-formatted td {
+    vertical-align: top;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+//image with caption
+#main figure.img-with-caption {
+    display: inline-block;
+}
+
+#main figure.img-with-caption img {
+    margin: 0;
+}
+
+#main figure.img-with-caption figcaption {
+    padding: 5px;
+    background-color: white;
+    margin-top: -10px;
+}
+
+#main figure.img-with-caption::after {
+    display: block;
+    content: "";
+    clear: both;
+}
